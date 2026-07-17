@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPro | Travel & Logistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+    <div class="logo">
+        ✈️ TravelPro
+    </div>
+
+    <div class="menu-toggle">
+        ☰
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <a href="#booking" class="btn">Book Now</a>
+
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Explore the World With TravelPro</h1>
+        <p>Your trusted partner for flights, logistics, cargo shipping, and unforgettable travel experiences.</p>
+
+        <a href="#booking" class="hero-btn">Start Your Journey</a>
+    </div>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>✈️ Flight Booking</h3>
+            <p>Affordable local and international flight reservations.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🚚 Cargo Transport</h3>
+            <p>Fast and secure logistics for businesses and individuals.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🏨 Hotel Booking</h3>
+            <p>Book comfortable hotels at the best prices worldwide.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="why-us">
+    <h2>Why Choose TravelPro?</h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <h3>🛡️ Trusted & Secure</h3>
+            <p>Your bookings and shipments are handled safely.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>⏰ 24/7 Support</h3>
+            <p>Our team is available whenever you need assistance.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🌍 Worldwide Coverage</h3>
+            <p>Travel and logistics services across multiple countries.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>💰 Affordable Prices</h3>
+            <p>Quality service at competitive prices.</p>
+        </div>
+
+    </div>
+</section>
+<section class="destinations">
+    <h2>Popular Destinations</h2>
+
+    <div class="destination-container">
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=500" alt="Dubai">
+            <h3>Dubai</h3>
+            <p>Luxury shopping, modern architecture, and desert adventures.</p>
+            <a href="#booking" class="hero-btn">Book Now</a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=500" alt="Zanzibar">
+            <h3>Zanzibar</h3>
+            <p>Beautiful beaches, crystal-clear water, and rich culture.</p>
+            <a href="#booking" class="hero-btn">Book Now</a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=500" alt="Nairobi">
+            <h3>Nairobi</h3>
+            <p>Experience wildlife, business, and vibrant city life.</p>
+            <<a href="#booking" class="hero-btn">Book Now</a>
+        </div>
+
+    </div>
+</section>
+    <section class="reviews">
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <p>"TravelPro made my flight booking simple and stress-free. Excellent service!"</p>
+            <h3 class="stars">★★★★★</h3>
+            <strong>James K.</strong>
+        </div>
+
+        <div class="review-card">
+            <p>"My cargo was delivered safely and on time. I highly recommend their logistics services."</p>
+            <h3 class="stars">★★★★★</h3>
+            <strong>Amina W.</strong>
+        </div>
+
+        <div class="review-card">
+            <p>"Great support team and affordable travel packages. I will definitely use them again."</p>
+            <h3 class="stars">★★★★★</h3>
+            <strong>David M.</strong>
+        </div>
+
+    </div>
+
+</section></section>
+<section id="booking" class="booking">
+
+    <h2>Book Your Trip</h2>
+    <p>Fill in your details and start your journey with TravelPro.</p>
+
+    <form class="booking-form" onsubmit="bookTrip(); return false;">
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+
+        <label>Destination</label>
+        <select id="destination" required>
+            <option>Select Destination</option>
+            <option>Dubai</option>
+            <option>Zanzibar</option>
+            <option>Nairobi</option>
+            <option>Paris</option>
+            <option>London</option>
+            <option>New York</option>
+        </select>
+
+
+        <label>Travel Date</label>
+        <input type="date" id="date" required>
+
+
+        <label>Number of Passengers</label>
+        <select id="passengers">
+            <option>1 Passenger</option>
+            <option>2 Passengers</option>
+            <option>3 Passengers</option>
+            <option>4 Passengers</option>
+            <option>5+ Passengers</option>
+        </select>
+
+
+        <label>Special Requests</label>
+        <textarea id="message" placeholder="Any special requirements..."></textarea>
+
+
+        <button type="submit">
+            Book Now
+        </button>
+
+    </form>
+
+</section>
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>We're here to help you plan your next journey.</p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>📍 Nairobi, Kenya</p>
+            <p>📞 +254 700 123 456</p>
+            <p>📧 info@travelpro.com</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</section>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>✈️ TravelPro</h3>
+            <p>Your trusted partner for travel, flights, cargo, and logistics solutions.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p>Home</p>
+            <p>Services</p>
+            <p>Destinations</p>
+            <p>Contact</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📍 Nairobi, Kenya</p>
+            <p>📞 +254 700 123 456</p>
+            <p>📧 info@travelpro.com</p>
+        </div>
+
+    </div>
+    <p class="copyright">&copy; 2026 TravelPro. All Rights Reserved.</p>
+
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        <a href="https://wa.me/254794791277" target="_blank">WhatsApp</a>
+        </div>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
